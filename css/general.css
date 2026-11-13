@@ -1,12 +1,12 @@
 @font-face {
   font-family: Fraunces;
-  src: url("/CC-104-Project/assets/fonts/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf");
+  src: url("../assets/fonts/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf");
   font-weight: 100 900;
 }
 
 @font-face {
   font-family: DM Sans;
-  src: url("/CC-104-Project/assets/fonts/DMSans-VariableFont_opsz\,wght.ttf");
+  src: url("../assets/fonts/DMSans-VariableFont_opsz\,wght.ttf");
   font-weight: 100 900;
 }
 
