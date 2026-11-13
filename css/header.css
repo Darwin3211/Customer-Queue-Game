@@ -1,0 +1,95 @@
+
+.Customer-Queue {
+  display: block;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+.header {
+  display: flex;
+  height: 90px;
+  
+}
+
+.left-header {
+  display: flex;
+  align-items: center;
+  
+}
+
+.left-header p {
+  font-family: "Fraunces";
+  font-size: 20px;
+  font-weight: bold;
+  color: #243C37;
+  margin-top: 20px;
+  padding-left: 10px;
+
+
+}
+.game-icon {
+  background-color: #243C37;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+}
+
+.middle-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 60px;
+}
+
+.shift-label {
+  font-size: 12px;
+  font-family: DM Sans;
+  color: #71827E;
+  margin-right: 8px;
+}
+
+.goal-badge {
+  font-family: DM sans;
+  font-size: 11px;
+  font-weight: 700;
+  color: #38564F;
+  border: 1px solid #D8D5C9;
+  border-radius: 15px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 11px;
+  padding-right: 11px;
+}
+
+.right-header {
+
+}
+
+.reset-btn {
+  display: flex;
+  align-items: center;
+  justify-self: end;
+  gap: 8px;
+  padding: 10px 15px;
+  border: 1px solid #d7d2c5;
+  border-radius: 10px;
+  color: #48625c;
+  background: rgba(255, 255, 255, 0.64);
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.reset-btn:hover {
+  border-color: #9fafaa;
+  background: #fff;
+  transform: translateY(-1px);
+}
+
+.reset-btn img {
+  height: 17px;
+  width: 17px;
+}
