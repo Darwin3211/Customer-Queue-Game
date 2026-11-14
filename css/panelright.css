@@ -1,0 +1,144 @@
+.right-panel {
+  padding: 22px;
+  border: 1px solid #E8E3D6;
+  border-radius: 24px;
+  background: #FFFDF8;
+  box-shadow: 0 10px 30px rgba(44, 62, 56, 0.06);
+}
+
+/* heading */
+.queue-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.queue-title {
+  margin: 4px 0 0;
+  font-family: "Fraunces", serif;
+  font-size: 26px;
+  font-weight: 700;
+  color: #243C37;
+}
+
+.fifo-badge {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  color: #2F5D50;
+  background: #E8F1EC;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.fifo-badge::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #4F9A7C;
+}
+
+/* This is the queue line characters design and the html version of this is inside the templates. Used for logics later on */
+.queue-line {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 18px 0 14px;
+  min-height: 306px;
+  max-height: 306px;
+  overflow-y: auto;
+}
+
+.queue-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 14px;
+  border: 1px solid transparent;
+  border-radius: 16px;
+}
+
+/* first customer (at the counter) */
+.queue-item.front {
+  border-color: #E8DCC4;
+  background: #FAF3E6;
+}
+
+.ticket-pill {
+  min-width: 50px;
+  padding: 5px 10px;
+  border-radius: 999px;
+  color: #8A8C82;
+  background: #EEEBE3;
+  font-size: 12px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.queue-item.front .ticket-pill {
+  color: #ffffff;
+  background: #E58B6F;
+}
+
+.queue-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.queue-info strong {
+  font-size: 15px;
+  color: #243C37;
+}
+
+.queue-info small {
+  font-size: 12px;
+  color: #8A8C82;
+}
+
+.drink-icon {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  background: #F3F1EA;
+}
+
+.drink-icon img {
+  width: 20px;
+  height: 20px;
+}
+
+/* queue rule note */
+.queue-note {
+  display: flex;
+  gap: 12px;
+  margin-top: 6px;
+  padding: 14px 16px;
+  border-radius: 16px;
+  background: #FDEFCB;
+}
+
+.note-icon {
+  font-size: 18px;
+  color: #C9922E;
+}
+
+.note-title {
+  margin: 0 0 2px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #6B4E16;
+}
+
+.note-text {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.4;
+  color: #8A7442;
+}

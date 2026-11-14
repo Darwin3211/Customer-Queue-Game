@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/panelleft.css">
     <link rel="stylesheet" href="css/panelmiddle.css">
     <link rel="stylesheet" href="css/panelmidservice.css">
+    <link rel="stylesheet" href="css/panelright.css">
 
     
   </head>
@@ -48,7 +49,8 @@
             <!--Target this with JS-->
             <button id="resetBtn" class="reset-btn">
               <img src="assets/icons/Arrow-Reload--Streamline-Sharp-Streamline-Material-Free.svg">
-              Reset</button>
+              Reset
+            </button>
           </div>
         </div>
 
@@ -83,6 +85,7 @@
               </div>
             </div>
 
+            <!--Target this with JS-->
             <div class="stat-row">
               <div class="stat-icon stat-icon-red">
                 <img src="assets/icons/circle-check.svg">
@@ -93,6 +96,7 @@
               </div>
             </div>
 
+            <!--Target with JS-->
             <button id="addBtn" class="add-btn">
               <img src="assets/icons/plus.svg">
               Add customer
@@ -105,7 +109,7 @@
         <div class="col-lg-6">
           <div class="middle-panel">
 
-            <!-- Cafe scene -->
+            <!-- This is just a design for a coffee scene dont touch it-->
           <div class="cafe-scene">
 
             <!-- Menu board on the wall -->
@@ -167,14 +171,16 @@
 
           </div>
 
+          <!--Target with JS-->
           <div class="service-area">
 
           <div class="service-heading">
             <div id="counter" class="serving-main">
               <p class="label">NOW SERVING</p>
-              <h2 id="nowServing" class="now-serving">No guests waiting</h2>
+              <p id="nowServing" class="now-serving">No guests waiting</p>
             </div>
 
+            <!--Target with JS-->
             <div class="serving-next">
                 <p class="label">UP NEXT</p>
                     <div class="next-info">
@@ -192,7 +198,8 @@
           </div>
 
               <p class="drink-hint">Choose the drink to serve the first guest.</p>
-
+          
+              <!--Target with JS-->
               <div class="drink-buttons">
                 <button class="drink-btn" data-drink="Oat latte">Oat latte</button>
                 <button class="drink-btn" data-drink="Cappuccino">Cappuccino</button>
@@ -201,6 +208,31 @@
 
               <div id="message" class="message-box">Click "Add customer" to start.</div>
 
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Right Panel -->
+        <div class="col-lg-3">
+          <div class="right-panel">
+
+            <div class="queue-head">
+              <div>
+                <p class="label">WAITING LINE</p>
+                <h3 class="queue-title"><span id="queueCount">0</span> waiting</h3>
+              </div>
+              <span class="fifo-badge">FIFO</span>
+            </div>
+
+            
+
+            <div class="queue-note">
+              <span class="note-icon">✦</span>
+              <div>
+                <p class="note-title">Queue rule</p>
+                <p class="note-text">Only the earliest ticket can be served. New arrivals always join the end.</p>
+              </div>
             </div>
 
           </div>
