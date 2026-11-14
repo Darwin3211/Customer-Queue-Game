@@ -6,6 +6,7 @@
   height: 451px;
   width: 230px;
   border-radius: 15px;
+  border-width: 1px;
   display: flex;
   align-items: center;
   flex: 1;
@@ -39,18 +40,113 @@
   border: 10px solid #E8E4D8;
   border-radius: 50%;
   margin-bottom: 20px;
+  
 }
 
-.borderline {
-  width: 100%;                     
-  height: 1px;
-  margin: 18px 0;
-  background-color: #E8E3D6;
-}
 
 .progress-circle span {
   font-family: Fraunces;
   font-weight: 700;
   font-size: 32px;
   color: #243C37;
+  margin-right: 6px;
+
+}
+
+.goal-text {
+  font-family: DM Sans;
+  font-size: 13px;
+  font-weight: 700;
+  color: #243C37;
+  margin-bottom: 0;
+}
+
+.goal-sub {
+  font-size: 11px;
+  font-family: DM Sans;
+  color: #8B918C;
+}
+
+.borderline {
+    width: 100%;                     
+    height: 1px;
+    background-color: #E8E3D6;
+    margin-bottom: 10px;
+  }
+
+.stat-row {
+  display: flex;
+  gap: 11px;
+    
+}
+
+.stat-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 39px;
+  height: 39px;
+  border-radius: 12px;
+}
+
+.stat-icon img {
+  width: 20px;
+  height: 20px;         
+}
+
+.stat-icon-green { background-color: #E2F0EB; }
+.stat-icon-red   { background-color: #FBE0DA; }
+
+.add-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  margin-top: auto;               
+  padding: 12px 0;
+  background-color: #E8F1EC;
+  border: 1px solid #CFE0D6;
+  border-radius: 12px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  color: #2F5D50;
+  cursor: pointer;
+}
+
+.add-btn:hover {
+  background-color: #DCEBE2;
+}
+
+.add-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.stat-info {
+  display: flex;
+  justify-content: right;
+  flex-direction: column;
+}
+
+.stat-value, .stat-value span {
+  font-family: DM Sans;
+  font-size: 13px;
+  font-weight: 700;
+  color: #334D46;
+  margin-left: 0;
+}
+
+
+.stat-label {
+  font-family: DM Sans;
+  font-size: 10px;
+  font-weight: 400;
+  color: #92968E;
+  margin-bottom: 0;
+  margin-left: 0;
+  display: flex;
+  justify-content: left;
 }

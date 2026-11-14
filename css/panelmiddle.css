@@ -1,0 +1,511 @@
+/* Dont touch this code, When I wrote, only God and I knew how it worked. Now I don't know why its working. This code runs on hope and prayers
+ */
+.service-area {
+  padding: 23px 28px 20px;
+  background: #fffdfa;
+}
+
+.service-heading {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.now-serving {
+  margin: 6px 0 0;
+  font-family: "Fraunces", serif;
+  font-size: 28px;
+  color: #243C37;
+}
+
+/* up next card */
+.serving-next {
+  min-width: 150px;
+  padding: 10px 14px;
+  border: 1px solid #E8E3D6;
+  border-radius: 16px;
+  background: #F5F2EA;
+}
+
+.next-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.next-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.next-text strong {
+  font-size: 14px;
+  color: #243C37;
+}
+
+.next-text small {
+  font-size: 11px;
+  color: #8A8C82;
+}
+
+/* hint */
+.drink-hint {
+  margin: 14px 0 12px;
+  font-size: 13px;
+  color: #71827E;
+}
+
+/* drink buttons */
+.drink-buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.drink-btn {
+  padding: 16px;
+  border: none;
+  border-radius: 14px;
+  color: #2F5D50;
+  background: #E8F1EC;
+  font-family: "DM Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.drink-btn:hover {
+  color: #ffffff;
+  background: #3B6B5C;
+}
+
+/* message box */
+.message-box {
+  margin-top: 14px;
+  padding: 12px;
+  border-radius: 10px;
+  color: #4F7A6C;
+  background: #E8F1EC;
+  font-size: 13px;
+  text-align: center;
+}
+
+.message-error   { color: #B5503C; background: #FBE0DA; }
+.message-success { color: #2F5D50; background: #DCEFE3; }
+.middle-panel {
+  background: #fffdfa;
+  border: 1px solid #E8E3D6;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+/* ===== CAFE SCENE ===== */
+.cafe-scene {
+  position: relative;
+  height: 330px;
+  overflow: hidden;
+  background: #d9e5df;
+}
+
+.cafe-scene::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: 0.45;
+  background-image: radial-gradient(#77978e 1px, transparent 1px);
+  background-size: 18px 18px;
+}
+
+.cafe-scene::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 78px;
+  height: 7px;
+  background: #a98768;
+  box-shadow: 0 5px 0 #7a604a;
+}
+
+/* menu board */
+.menu-board {
+  position: absolute;
+  top: 35px;
+  left: 45px;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  width: 100px;
+  height: 116px;
+  padding: 16px 18px;
+  border: 5px solid #a98768;
+  color: #eff5ec;
+  background: #35574f;
+  box-shadow: 4px 5px 0 rgba(47, 66, 58, 0.14);
+}
+
+.menu-board span {
+  font-family: "Fraunces", serif;
+  font-size: 13px;
+  letter-spacing: 0.13em;
+  text-align: center;
+}
+
+.menu-board i {
+  height: 2px;
+  border-radius: 3px;
+  background: rgba(242, 244, 230, 0.55);
+}
+
+.menu-board i:nth-child(3) {
+  width: 72%;
+}
+
+/* wall pictures */
+.wall-art {
+  position: absolute;
+  top: 45px;
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  border: 4px solid #ebdfc7;
+  background: #faf4e8;
+  box-shadow: 2px 4px 0 rgba(73, 94, 86, 0.1);
+}
+
+.wall-art-one {
+  left: 165px;
+  width: 54px;
+  height: 69px;
+  transform: rotate(-2deg);
+}
+
+.wall-art-two {
+  right: 50px;
+  width: 70px;
+  height: 53px;
+  transform: rotate(2deg);
+}
+
+.wall-art-one span {
+  width: 18px;
+  height: 28px;
+  border-radius: 50% 50% 45% 45%;
+  background: #e58b6f;
+}
+
+.wall-art-two span {
+  width: 35px;
+  height: 17px;
+  border-radius: 50% 50% 8px 8px;
+  background: #8bb09d;
+}
+
+/* plant */
+.plant {
+  position: absolute;
+  right: 110px;
+  bottom: 90px;
+  z-index: 2;
+  width: 60px;
+  height: 90px;
+}
+
+.plant b {
+  position: absolute;
+  bottom: 0;
+  left: 14px;
+  width: 37px;
+  height: 32px;
+  border-radius: 4px 4px 13px 13px;
+  background: #d98567;
+}
+
+.plant i {
+  position: absolute;
+  bottom: 26px;
+  left: 28px;
+  width: 15px;
+  height: 47px;
+  border-radius: 100% 0 100% 0;
+  background: #527b67;
+  transform-origin: bottom;
+}
+
+.plant i:nth-child(1) { transform: rotate(-42deg); }
+.plant i:nth-child(2) { height: 57px; transform: rotate(-8deg); }
+.plant i:nth-child(3) { transform: rotate(38deg); }
+
+/* ===== CUSTOMER ===== */
+.customer-focus {
+  position: absolute;
+  z-index: 3;
+  left: 50%;
+  bottom: 65px;
+  transform: translateX(-50%);
+  transition: opacity 0.3s;
+}
+
+.customer-focus.empty {
+  opacity: 0;
+}
+
+.avatar {
+  position: relative;
+  width: 43px;
+  height: 47px;
+  flex: 0 0 auto;
+  overflow: hidden;
+}
+
+.avatar-large {
+  width: 122px;
+  height: 154px;
+}
+
+.avatar-head {
+  position: absolute;
+  top: 6px;
+  left: 11px;
+  z-index: 2;
+  width: 25px;
+  height: 27px;
+  border-radius: 48% 48% 45% 45%;
+}
+
+.avatar-hair {
+  position: absolute;
+  top: 2px;
+  left: 8px;
+  z-index: 3;
+  width: 31px;
+  height: 17px;
+  border-radius: 50% 55% 30% 15%;
+  filter: brightness(0.58);
+}
+
+.avatar-body {
+  position: absolute;
+  left: 4px;
+  bottom: -12px;
+  width: 37px;
+  height: 30px;
+  border-radius: 50% 50% 0 0;
+}
+
+.eye {
+  position: absolute;
+  top: 11px;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  background: #413b35;
+}
+
+.eye-left { left: 7px; }
+.eye-right { right: 7px; }
+
+.smile {
+  position: absolute;
+  left: 10px;
+  top: 16px;
+  width: 6px;
+  height: 4px;
+  border-bottom: 1px solid rgba(65, 59, 53, 0.7);
+  border-radius: 50%;
+}
+
+/* large avatar (the one at the counter) */
+.avatar-large .avatar-head {
+  top: 19px;
+  left: 28px;
+  width: 68px;
+  height: 76px;
+}
+
+.avatar-large .avatar-hair {
+  top: 8px;
+  left: 20px;
+  width: 85px;
+  height: 49px;
+}
+
+.avatar-large .avatar-body {
+  left: 4px;
+  bottom: -27px;
+  width: 114px;
+  height: 91px;
+}
+
+.avatar-large .eye {
+  top: 31px;
+  width: 5px;
+  height: 5px;
+}
+
+.avatar-large .eye-left { left: 19px; }
+.avatar-large .eye-right { right: 19px; }
+
+.avatar-large .smile {
+  left: 27px;
+  top: 48px;
+  width: 15px;
+  height: 9px;
+  border-bottom-width: 2px;
+}
+
+/* ===== TICKET BADGE ===== */
+.ticket-badge {
+  position: absolute;
+  z-index: 4;
+  left: calc(50% - 125px);
+  bottom: 150px;
+  padding: 6px 14px;
+  border-radius: 999px;
+  color: #ffffff;
+  background: #e58b6f;
+  font-size: 13px;
+  font-weight: 700;
+  box-shadow: 0 4px 10px rgba(44, 62, 56, 0.2);
+  transition: opacity 0.3s;
+}
+
+.ticket-badge.empty {
+  opacity: 0;
+}
+
+/* ===== THOUGHT BUBBLE ===== */
+.order-bubble {
+  position: absolute;
+  z-index: 4;
+  left: calc(50% + 55px);
+  bottom: 175px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 176px;
+  padding: 10px 16px;
+  border: 1px solid #d3d9d3;
+  border-radius: 30px;
+  color: #456159;
+  background: #fffefa;
+  box-shadow: 0 8px 22px rgba(44, 62, 56, 0.12);
+  transition: opacity 0.3s;
+}
+
+.order-bubble.empty {
+  opacity: 0;
+}
+
+/* big trailing circle */
+.order-bubble::after {
+  content: "";
+  position: absolute;
+  left: -10px;
+  bottom: -14px;
+  width: 14px;
+  height: 14px;
+  border: 1px solid #d3d9d3;
+  border-radius: 50%;
+  background: #fffefa;
+}
+
+/* small trailing circle */
+.order-bubble::before {
+  content: "";
+  position: absolute;
+  left: -22px;
+  bottom: -26px;
+  width: 8px;
+  height: 8px;
+  border: 1px solid #d3d9d3;
+  border-radius: 50%;
+  background: #fffefa;
+}
+
+.order-bubble > svg {
+  flex: 0 0 auto;
+  color: #d77d63;
+}
+
+.order-bubble div {
+  display: flex;
+  flex-direction: column;
+}
+
+.order-bubble small {
+  color: #91968e;
+  font-size: 9px;
+}
+
+.order-bubble strong {
+  font-family: "Fraunces", serif;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+/* ===== COUNTER ===== */
+.counter-front {
+  position: absolute;
+  z-index: 5;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 80px;
+  border-top: 8px solid #e6bd85;
+  background: #c58b5f;
+}
+
+.counter-lines {
+  position: absolute;
+  inset: 0;
+  opacity: 0.25;
+  background: repeating-linear-gradient(90deg, transparent 0 74px, #754a32 75px 77px);
+}
+
+.register {
+  position: absolute;
+  left: 37px;
+  bottom: 58px;
+  width: 83px;
+  height: 53px;
+  border: 6px solid #59706b;
+  border-radius: 8px 8px 3px 3px;
+  background: #e6ece6;
+}
+
+.register span {
+  position: absolute;
+  inset: 8px;
+  border-radius: 2px;
+  background: #bed0c8;
+}
+
+.register i {
+  position: absolute;
+  left: -13px;
+  bottom: -14px;
+  width: 98px;
+  height: 12px;
+  border-radius: 3px;
+  background: #495f5b;
+}
+
+.tip-jar {
+  position: absolute;
+  right: 42px;
+  bottom: 57px;
+  display: grid;
+  width: 44px;
+  height: 55px;
+  place-items: center;
+  border: 3px solid #b7c6c0;
+  border-top: 7px solid #738d84;
+  border-radius: 3px 3px 11px 11px;
+  color: #668078;
+  background: rgba(239, 248, 244, 0.55);
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+

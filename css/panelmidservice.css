@@ -1,0 +1,93 @@
+
+.service-area {
+  padding: 23px 28px 20px;
+  background: #fffdfa;
+}
+
+.service-heading {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  
+}
+
+.now-serving {
+  font-family: "Fraunces", serif;
+  font-size: 11px;
+  color: #243C37;
+}
+
+/* up next card */
+.serving-next {
+  min-width: 150px;
+  padding: 10px 14px;
+  border: 1px solid #E8E3D6;
+  border-radius: 16px;
+  background: #F5F2EA;
+}
+
+.next-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.next-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.next-text strong {
+  font-size: 14px;
+  color: #243C37;
+}
+
+.next-text small {
+  font-size: 11px;
+  color: #8A8C82;
+}
+
+/* hint */
+.drink-hint {
+  margin: 14px 0 12px;
+  font-size: 13px;
+  color: #71827E;
+}
+
+/* drink buttons */
+.drink-buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.drink-btn {
+  padding: 16px;
+  border: none;
+  border-radius: 14px;
+  color: #2F5D50;
+  background: #E8F1EC;
+  font-family: "DM Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.drink-btn:hover {
+  color: #ffffff;
+  background: #3B6B5C;
+}
+
+/* message box */
+.message-box {
+  margin-top: 14px;
+  padding: 12px;
+  border-radius: 10px;
+  color: #4F7A6C;
+  background: #E8F1EC;
+  font-size: 13px;
+  text-align: center;
+}
+
+.message-error   { color: #B5503C; background: #FBE0DA; }
+.message-success { color: #2F5D50; background: #DCEFE3; }
