@@ -29,7 +29,7 @@
             <div class="game-icon">
               <img src="assets/icons/coffee.svg">
             </div>
-            <p>Customer Queue Game</p>
+            <p>Diddy Bro-ster cafe</p>
           </div>
         </div>
 
@@ -55,9 +55,7 @@
         </div>
 
       </div>
-
-
-      
+   
       <div class="row g-4 game-area">
 
         <!--Left side of the game-->
@@ -66,9 +64,12 @@
             <p class="label">SHIFT PROGRESS</p>
   
             <div class="progress-circle">
-              <span id="servedCount">0</span>of 10
+              <svg class="ring" viewBox="0 0 116 116">
+                <circle class="ring-track" cx="58" cy="58" r="53"></circle>
+                <circle id="ringFill" class="ring-fill" cx="58" cy="58" r="53"></circle>
+              </svg>
+              <span id="servedCount">0</span> of 10
             </div>
-            <p id="goalText" class="goal-text mt-3">10 guests to go</p>
             <p class="goal-sub">First in, first served</p>
 
             <div class="borderline"></div>
@@ -185,10 +186,10 @@
                 <p class="label">UP NEXT</p>
                     <div class="next-info">
                         <div class="avatar">
-                            <span class="avatar-hair" style="background: #8A4A3A;"></span>
-                            <span class="avatar-head" style="background: #E0A07F;"></span>
-                            <span class="avatar-body" style="background: #E0705A;"></span>
-                        </div>
+                              <span id="nextHair" class="avatar-hair" style="background: #8A4A3A;"></span>
+                              <span id="nextHead" class="avatar-head" style="background: #E0A07F;"></span>
+                              <span id="nextBody" class="avatar-body" style="background: #E0705A;"></span>
+                          </div>
                             <div class="next-text">
                               <strong id="upNext">None</strong>
                               <small id="upNextName">No one yet</small>
@@ -225,6 +226,66 @@
               <span class="fifo-badge">FIFO</span>
             </div>
 
+<div id="queueLine" class="queue-line">
+
+              <div class="queue-item front">
+                <span class="ticket-pill">#101</span>
+                <div class="avatar">
+                  <span class="avatar-hair" style="background: #2F4A55;"></span>
+                  <span class="avatar-head" style="background: #A86B4A;"></span>
+                  <span class="avatar-body" style="background: #3F6F85;"></span>
+                </div>
+                <div class="queue-info">
+                  <strong>Maya</strong>
+                  <small>At counter · first</small>
+                </div>
+                <span class="drink-icon"><img src="assets/icons-for-queue/oat-latte.svg" alt=""></span>
+              </div>
+
+              <div class="queue-item">
+                <span class="ticket-pill">#102</span>
+                <div class="avatar">
+                  <span class="avatar-hair" style="background: #8A4A3A;"></span>
+                  <span class="avatar-head" style="background: #E0A07F;"></span>
+                  <span class="avatar-body" style="background: #E0705A;"></span>
+                </div>
+                <div class="queue-info">
+                  <strong>Theo</strong>
+                  <small>Position 2</small>
+                </div>
+                <span class="drink-icon"><img src="assets/icons-for-queue/macha.svg" alt=""></span>
+              </div>
+
+              <div class="queue-item">
+                <span class="ticket-pill">#103</span>
+                <div class="avatar">
+                  <span class="avatar-hair" style="background: #8A7A2A;"></span>
+                  <span class="avatar-head" style="background: #7A4A2A;"></span>
+                  <span class="avatar-body" style="background: #D9AE3A;"></span>
+                </div>
+                <div class="queue-info">
+                  <strong>June</strong>
+                  <small>Position 3</small>
+                </div>
+                <span class="drink-icon"><img src="assets/icons-for-queue/oat-latte.svg" alt=""></span>
+              </div>
+
+              <div class="queue-item">
+                <span class="ticket-pill">#104</span>
+                <div class="avatar">
+                  <span class="avatar-hair" style="background: #4A5A3A;"></span>
+                  <span class="avatar-head" style="background: #B5714E;"></span>
+                  <span class="avatar-body" style="background: #7A9468;"></span>
+                </div>
+                <div class="queue-info">
+                  <strong>Noah</strong>
+                  <small>Position 4</small>
+                </div>
+                <span class="drink-icon"><img src="assets/icons-for-queue/cappuccino.svg" alt=""></span>
+              </div>
+
+            </div>      
+            
             
 
             <div class="queue-note">
