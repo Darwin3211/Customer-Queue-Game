@@ -52,3 +52,50 @@ function peek() {
   return queue[0];
 }
 
+// Player clicked a drink button
+function serveDrink(drink) {
+  if (gameOver) {
+    showMessage("Shift complete! Click Reset to play again.", "success");
+    return;
+  }
+
+  const front = peek();
+
+  // can't serve an empty queue
+  if (front === null) {
+    showMessage("No customers waiting. Click Add customer first.", "error");
+    return;
+  }
+
+  // wrong drink: the customer stays in the line
+  if (drink !== front.order) {
+    showMessage("Wrong drink! " + front.name + " wants " + front.order + ".", "error");
+    return;
+  }
+
+  // correct drink: serve the earliest customer
+  dequeue();
+  served++;
+  showMessage("Served " + front.name + "'s " + front.order + "!", "success");
+  checkWin();
+  render();
+}
+
+// Check if the player served 10 customers
+function checkWin() {
+  if (served >= TARGET) {
+    gameOver = true;
+    showMessage("You win! You served " + TARGET + " customers.", "success");
+  }
+}
+
+// Start over
+function reset() {
+  queue = [];
+  customerNo = 100;
+  served = 0;
+  gameOver = false;
+  showMessage('Click "Add customer" to start.', "");
+  render();
+}
+
